@@ -1,5 +1,4 @@
 @echo off
-
 set URL="http://iframe.ip138.com/ic.asp"
 
 for /f "tokens=2 delims=[]" %%a in ('wget -q "%URL%" -O -') do (
@@ -8,5 +7,10 @@ for /f "tokens=2 delims=[]" %%a in ('wget -q "%URL%" -O -') do (
 
 )
 
-echo %PublicIP%  jamka.ze>hosts
+echo %PublicIP% jamka.ze
+echo. >> C:\Windows\System32\drivers\etc\hosts
+echo. >> C:\Windows\System32\drivers\etc\hosts
+echo #personal for GitDns >> C:\Windows\System32\drivers\etc\hosts
+echo %PublicIP% jamka.ze >> C:\Windows\System32\drivers\etc\hosts
+copy C:\Windows\System32\drivers\etc\hosts .\hosts
 pause
