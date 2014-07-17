@@ -1,5 +1,3 @@
-#!/bin/sh --login -i
-
 cd /d/dns/GitDns
 echo $PATH
 git add hosts

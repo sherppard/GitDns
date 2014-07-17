@@ -21,7 +21,8 @@ if %PublicIP%==%%i (
 exit
 )else (
 echo %PublicIP% jamka.ze > D:\dns\GitDns\hosts
-D:\"Program Files (x86)"\Git\bin\sh.exe commit.sh
+cd C:\Users\Administrator
+D:\"Program Files (x86)"\Git\bin\sh.exe --login -i commit.sh
 pause
 exit
 )
