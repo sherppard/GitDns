@@ -1,4 +1,4 @@
-ï»¿@echo off
+@echo off
 
 set URL="http://20140507.ip138.com/ic.asp"
 
@@ -10,7 +10,7 @@ for /f "tokens=2 delims=[]" %%a in ('wget -q "%URL%" -O -') do (
 
 )
 echo %PublicIP% jamka.ze
-:: ç­‰äºŽnull è¦ä¸¥æ ¼æµ‹è¯•
+:: µÈÓÚnull ÒªÑÏ¸ñ²âÊÔ
 if NOT defined PublicIP (
 ping 127.1 -n 10>nul
 goto again
@@ -22,6 +22,8 @@ exit
 )else (
 echo %PublicIP% jamka.ze > F:\all-tech\source_code\GitDns\hosts
 D:\"Program Files (x86)"\Git\bin\sh.exe commit.sh
+pause
 exit
 )
 )
+
