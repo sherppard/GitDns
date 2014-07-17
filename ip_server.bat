@@ -20,7 +20,7 @@ for /f "tokens=1" %%i in (hosts) do (
 if %PublicIP%==%%i (
 exit
 )else (
-echo %PublicIP% jamka.ze > D:\dns\GitDns\hosts
+echo %PublicIP% jamka.ze > d:\dns\GitDns\hosts
 cd C:\Users\Administrator
 D:\"Program Files (x86)"\Git\bin\sh.exe --login -i commit.sh
 pause
