@@ -1,6 +1,6 @@
-@echo off
+﻿@echo off
 
-set URL="http://iframe.ip138.com/ic.asp"
+set URL="http://20140507.ip138.com/ic.asp"
 
 :again
 
