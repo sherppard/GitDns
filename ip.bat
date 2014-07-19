@@ -12,5 +12,5 @@ echo. >> C:\Windows\System32\drivers\etc\hosts
 echo. >> C:\Windows\System32\drivers\etc\hosts
 echo #personal for GitDns >> C:\Windows\System32\drivers\etc\hosts
 echo %PublicIP% jamka.ze >> C:\Windows\System32\drivers\etc\hosts
-::copy C:\Windows\System32\drivers\etc\hosts .\hosts
+
 pause
