@@ -23,7 +23,7 @@ if %PublicIP%==%beforeIP% (
 exit
 )else (
 D:\"Program Files (x86)"\Git\bin\sh.exe rewrite.sh
-::D:\"Program Files (x86)"\Git\bin\sh.exe commit.sh
+
 cd C:\Users\Administrator
 D:\"Program Files (x86)"\Git\bin\sh.exe --login -i commit.sh
 exit
