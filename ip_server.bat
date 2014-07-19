@@ -16,15 +16,16 @@ ping 127.1 -n 10>nul
 goto again
 )
 
-for /f "tokens=1" %%i in (hosts) do (
-if %PublicIP%==%%i (
+type hosts | grep sherpper | cut -d' ' -f1 > temp
+set /p beforeIP=<temp & del temp
+
+if %PublicIP%==%beforeIP% (
 exit
 )else (
-echo %PublicIP% jamka.ze > d:\dns\GitDns\hosts
+D:\"Program Files (x86)"\Git\bin\sh.exe rewrite.sh
 ::D:\"Program Files (x86)"\Git\bin\sh.exe commit.sh
 cd C:\Users\Administrator
 D:\"Program Files (x86)"\Git\bin\sh.exe --login -i commit.sh
 exit
-)
 )
 
