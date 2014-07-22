@@ -1,18 +1,16 @@
 @echo off
 
-:: ä¸ºGitDnsåˆ›å»ºç›®å½•
+:: ÎªGitDns´´½¨Ä¿Â¼
+::if not exist GitDns md GitDns
+
 cd C:\"Program Files"
-if not exist GitDns md GitDns
+if exist GitDns rd /q /s C:\"Program Files"\GitDns
 
-:: è¿›å…¥GitDnsç›®å½•
-C:
-cd C:\"Program Files"\GitDns 
-
-:: clone GitDnsçš„ä»“åº“åˆ°æœ¬åœ°,notice: ä¿®æ”¹sh.exeçš„è·¯å¾„
+:: clone GitDnsµÄ²Ö¿âµ½±¾µØ,notice: ÐÞ¸Äsh.exeµÄÂ·¾¶
 CD %HOMEDRIVE%%HOMEPATH%
-D:\"Program Files (x86)"\Git\bin\sh.exe --login -i clone.sh
+D:\"Program Files"\Git\bin\sh.exe --login -i clone.sh
 
-:: å°†æœ€æ–°çš„hostsæ–‡ä»¶ è¦†ç›– æœ¬åœ°çš„hostsæ–‡ä»¶
+:: ½«×îÐÂµÄhostsÎÄ¼þ ¸²¸Ç ±¾µØµÄhostsÎÄ¼þ
 c:
 cd C:\"Program Files"\GitDns
 copy hosts C:\Windows\System32\drivers\etc\hosts

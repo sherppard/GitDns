@@ -1,3 +1,3 @@
-cd /c/"Program Files"/GitDns
-git clone git@github.com:sherpper/GitDns.git
+cd /c/"Program Files"
+git clone https://github.com/sherpper/GitDns.git
 exit
