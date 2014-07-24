@@ -67,7 +67,7 @@ PATH %PATH%;%~sdp0
 :: 修改快捷方式,如果%cd% 有空格,需要加"", 如果没有就不需要加""
 shortcut -f -c "%cd%\client.lnk" -t "%cd%\client_ungit.bat" -i "%cd%\19.ico" -d . -n "%cd%\client.lnk"
 
-:: 通过client_ungit.lnk以管理员身份运行client_ungit.bat
+:: 通过client.lnk以管理员身份运行startup.bat
 %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\"Start Menu"\Programs\Startup\startup.bat
 
 exit
