@@ -11,7 +11,7 @@ cd %~sp0
 PATH %PATH%;%~sdp0
 
 :: 更改快捷方式内容
-shortcut -f -c client.lnk -t init_start.bat -d "%~sdp0" -i 19.ico -n client.lnk
+shortcut -f -c .\client.lnk -t .\init_start.bat -d . -i .\19.ico -n .\client.lnk
 
 :: 执行快捷方式以获得管理员权限
 client.lnk
