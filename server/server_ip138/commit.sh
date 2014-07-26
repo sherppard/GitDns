@@ -1,4 +1,4 @@
-cd /d/dns/GitDns
+﻿cd /d/dns/GitDns
 pwd
 # 指定起始位置,notice: 修改为你的项目目录
 # 第一行的# 不能随便用，否则会出问题
@@ -12,7 +12,10 @@ export x=`date -d today '+%Y-%m-%e %T'`
 
 # 提交到远程库
 git add hosts
+read
+pause
 git commit -m "ip have been changed_`echo $x`"
 ping -n 5 127.0.0.1 > nul
 git push origin dev
+ping 127.0.0.1
 exit
