@@ -1,6 +1,6 @@
 @echo off
 f:
-cd F:\all-tech\source_code\GitDns 
+cd f:\all-tech\source_code\GitDns\client\client_test
 
 cd C:\Users\weize
 D:\"Program Files (x86)"\Git\bin\sh.exe --login -i client.sh
