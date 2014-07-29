@@ -32,7 +32,6 @@ D:\"Program Files (x86)"\Git\bin\sh.exe rewrite.sh
 :: 运行提交到github的脚本,notice: 修改sh.exe 的路径
 cd %HOMEDRIVE%%HOMEPATH%  
 D:\"Program Files (x86)"\Git\bin\sh.exe --login -i commit.sh
-pause
 exit
 )
 
