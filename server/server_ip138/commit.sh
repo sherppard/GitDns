@@ -1,16 +1,18 @@
-ï»¿cd /d/dns/GitDns
 pwd
-# æŒ‡å®šèµ·å§‹ä½ç½®,notice: ä¿®æ”¹ä¸ºä½ çš„é¡¹ç›®ç›®å½•
-# ç¬¬ä¸€è¡Œçš„# ä¸èƒ½éšä¾¿ç”¨ï¼Œå¦åˆ™ä¼šå‡ºé—®é¢˜
+cd /d/dns/GitDns
+
+
+# Ö¸¶¨ÆðÊ¼Î»ÖÃ,notice: ÐÞ¸ÄÎªÄãµÄÏîÄ¿Ä¿Â¼
+# µÚÒ»ÐÐµÄ²»ÄÜËæ±ãÓÃ£¬·ñÔò»á³öÎÊÌâ
 
 PATH=/c/Users/Administrator/bin:.:/usr/local/bin:/mingw/bin:/bin:$PATH
 echo $PATH
-# æ·»åŠ ä¸Žgitbashç›¸åŒçš„PATHå˜é‡,notice: /c/Users/Administrator/bin è¿™æ®µè·¯å¾„å¯èƒ½éœ€è¦æ›´æ”¹
+# Ìí¼ÓÓëgitbashÏàÍ¬µÄPATH±äÁ¿,notice: /c/Users/Administrator/bin Õâ¶ÎÂ·¾¶¿ÉÄÜÐèÒª¸ü¸Ä
 
-# æäº¤çš„æ—¥æœŸä¸Žæ—¶é—´
+# Ìá½»µÄÈÕÆÚÓëÊ±¼ä
 export x=`date -d today '+%Y-%m-%e %T'`
 
-# æäº¤åˆ°è¿œç¨‹åº“
+# Ìá½»µ½Ô¶³Ì¿â
 git commit -a -m "ip have been changed_`echo $x`"
 ping -n 5 127.0.0.1 > nul
 git push origin dev
