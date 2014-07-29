@@ -11,11 +11,7 @@ echo $PATH
 export x=`date -d today '+%Y-%m-%e %T'`
 
 # 提交到远程库
-git add hosts
-read
-pause
-git commit -m "ip have been changed_`echo $x`"
+git commit -a -m "ip have been changed_`echo $x`"
 ping -n 5 127.0.0.1 > nul
 git push origin dev
-ping 127.0.0.1
 exit
