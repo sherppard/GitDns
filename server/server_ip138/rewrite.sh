@@ -1,13 +1,13 @@
 PublicIP=`wget -q "http://20140507.ip138.com/ic.asp" -O - | grep '[.*?]' | cut -d[ -f2 | cut -d] -f1`
-# æå–å‡ºå½“å‰çš„ipåœ°å€
+# ÌáÈ¡³öµ±Ç°µÄipµØÖ·
 
-# é‡æ–°æå–ipåœ°å€
+# ÖØĞÂÌáÈ¡ipµØÖ·
 refetchIP(){
 	PublicIP=`wget -q "http://20140507.ip138.com/ic.asp" -O - | grep '[.*?]' | cut -d[ -f2 | cut -d] -f1`
 	checkIP
 }
 
-# åˆ¤æ–­wgetæ˜¯å¦æå–åˆ°ipåœ°å€
+# ÅĞ¶ÏwgetÊÇ·ñÌáÈ¡µ½ipµØÖ·
 checkIP(){
 	if [ -z $PublicIP ]; then
 		refetchIP
@@ -16,10 +16,10 @@ checkIP(){
 
 checkIP
 
-# æå–å‡ºhostsæ–‡ä»¶çš„ipåœ°å€
+# ÌáÈ¡³öhostsÎÄ¼şµÄipµØÖ·
 beforeIP=`cat ../../hosts | grep sherpper | cut -d' ' -f1`
 
-# ç”¨readè¿›è¡Œshè„šæœ¬çš„è°ƒè¯• 
-# åœ¨hostsæ–‡ä»¶ä¸‹,è¿›è¡Œipåœ°å€æ›¿æ¢æ“ä½œ
+# ÓÃread½øĞĞsh½Å±¾µÄµ÷ÊÔ 
+# ÔÚhostsÎÄ¼şÏÂ,½øĞĞipµØÖ·Ìæ»»²Ù×÷
 sed -i "/sherpper/s/`echo $beforeIP`/`echo $PublicIP`/" ../../hosts  # notice: the double quotes
 exit
