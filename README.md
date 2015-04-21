@@ -1,5 +1,5 @@
 # GitDns
-_GitDns is good thing_ 
+_[GitDns is good thing](http://sherpper.github.io/GitDns/)_ 
 *利用git进行域名解析*
 =================================
 1. 在ADSL 拨号获取动态ip的环境使用的程序
